@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="潇寒的个人主页，分享技术博客、电影、动漫和书籍推荐">
+    <meta name="keywords" content="潇寒,博客,技术,电影推荐,动漫推荐,书籍推荐">
+    <meta property="og:title" content="潇寒的个人主页">
+    <meta property="og:description" content="分享技术博客、电影、动漫和书籍推荐">
+    <meta property="og:image" content="Avatar.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta name="twitter:card" content="summary">
+    <meta name="msvalidate.01" content="YOUR_BING_VALIDATION_CODE">
+    <meta name="msapplication-config" content="none">
+    <meta name="robots" content="index,follow">
+    <title>潇寒的个人主页 | 技术博客与内容分享</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入FontAwesome -->
+    <link rel="stylesheet" href="fontawesome/fontawesome-free-6.7.2-web/css/all.min.css">
+    <!-- 引入Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- 3D粒子效果容器 -->
+    <div id="particles-3d"></div>
+    
+    <!-- 加载动画 -->
+    <div class="cyber-loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">LOADING...</div>
+    </div>
+
+    <div class="cyber-container">
+        <!-- 头像区域 -->
+        <div class="avatar-section">
+            <img src="Avatar.jpg" alt="头像" class="cyber-avatar">
+        </div>
+        <!-- 名字 -->
+        <h2 class="cyber-name">潇寒paper龙</h2>
+        <!-- 导航按钮 -->
+        <div class="nav-buttons">
+            <a href="#" class="cyber-btn" id="blog-btn">
+                <span class="btn-icon"><i class="fas fa-blog fa-bounce"></i></span>
+                <span>Blog</span>
+            </a>
+            <a href="#" class="cyber-btn" id="github-btn">
+                <span class="btn-icon"><i class="fab fa-github"></i></span>
+                <span>GitHub</span>
+            </a>
+            <a href="#" class="cyber-btn" id="bilibili-btn">
+                <span class="btn-icon"><i class="fa-brands fa-bilibili"></i></span>
+                <span>Bilibili</span>
+            </a>
+            <a href="#" class="cyber-btn" id="music-btn">
+                <span class="btn-icon"><i class="fas fa-music"></i></span>
+                <span>网易云</span>
+            </a>
+        </div>
+
+        <!-- 推荐栏 -->
+        <div class="recommendation-section">
+            <div class="carousel" id="movie-carousel">
+                <h2>电影推荐</h2>
+                <button class="arrow left">←</button>
+                <div class="cards-container"></div>
+                <button class="arrow right">→</button>
+            </div>
+
+            <div class="carousel" id="anime-carousel">
+                <h2>番剧推荐</h2>
+                <button class="arrow left">←</button>
+                <div class="cards-container"></div>
+                <button class="arrow right">→</button>
+            </div>
+
+            <div class="carousel" id="book-carousel">
+                <h2>书籍推荐</h2>
+                <button class="arrow left">←</button>
+                <div class="cards-container"></div>
+                <button class="arrow right">→</button>
+            </div>
+        </div>
+    </div>
+<footer class="cyber-footer">
+        © 2025 潇寒博客站 - 版权所有
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
